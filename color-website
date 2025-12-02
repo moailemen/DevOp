@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Red Blue Green Test Page</title>
+    <style>
+        /* Ensures the body takes up the full height of the viewport and removes default margins */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex; /* Uses Flexbox for easy vertical stacking */
+            flex-direction: column;
+        }
+        /* Styles for each color section */
+        .color-section {
+            flex-grow: 1; /* Makes each section grow equally to fill the height */
+            display: flex;
+            justify-content: center; /* Centers text horizontally */
+            align-items: center; /* Centers text vertically */
+            font-size: 2em;
+            font-weight: bold;
+            color: white; /* Ensures text is visible against dark backgrounds */
+            text-shadow: 1px 1px 2px black;
+        }
+        /* Specific colors using hexadecimal codes */
+        .red {
+            background-color: #FF0000; /* Pure Red*/
+        }
+        .blue {
+            background-color: #0000FF; /* Pure Blue*/
+        }
+        .green {
+            background-color: #008000; /* A shade of Green*/
+        }
+    </style>
+</head>
+<body>
+    <div class="color-section red">
+        RED
+    </div>
+    <div class="color-section blue">
+        BLUE
+    </div>
+    <div class="color-section green">
+        GREEN
+    </div>
+</body>
+</html>
